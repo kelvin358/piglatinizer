@@ -1,9 +1,8 @@
 $( "document" ).ready(function() {
 
 $('#button').click(function(){
-    //let str = $('.input').val();
-    //$(.output).text(piglatin(str));
-    $('.output').text('.input');
+    let str = $('.input').val();
+    $('.output').text(piglatin(str));
 
 });
 
@@ -15,8 +14,7 @@ function piglatin(str){
     return str + 'ay';
 }
   else
-    str.slice(1);
-    return str + firstLetter + 'ay';
+    return str.slice(1) + firstLetter + 'ay';
 };
 
 });
